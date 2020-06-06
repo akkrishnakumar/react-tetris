@@ -1,0 +1,34 @@
+.Game {
+    width: 50%;
+    margin: 50px auto;
+}
+
+.Game>div {
+    margin: 10px 0;
+}
+
+.Board {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Field {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    height: 600px;
+    width: 450px;
+}
+
+.Tile {
+    height: 30px;
+    width: 45px;
+    background-color: chocolate;
+    border: 1px solid #c3c3c3;
+    border-radius: 10%;
+    box-sizing: border-box;
+}
+
+.Occupied {
+    background-color: aquamarine;
+}

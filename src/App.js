@@ -1,9 +1,10 @@
 import React from 'react';
+import Game from './containers/Game/Game';
 
 function App() {
   return (
     <div className="App">
-      <h1>React Tetris</h1>
+      <Game />
     </div>
   );
 }
