@@ -1,2 +1,3 @@
 # react-tetris
-Tetris game created in React
+
+A simple tetris game in react creating by following TDD (or atleast I tired)
