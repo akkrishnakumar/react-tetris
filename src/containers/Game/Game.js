@@ -16,7 +16,7 @@ const Game = (props) => {
                 //     .map(tile => tile.coordinate))
             //}
             setTetris(prevTetris => prevTetris.progress())
-        }, 1000)
+        }, 200)
     }, [tetris])
 
     const tileDivFrom = (tile, i) =>
@@ -28,10 +28,10 @@ const Game = (props) => {
 
     return (
         <div data-testid="game" className={classes.Game}>
-            <div data-testid="score">{tetris.score()}</div>
+            <div data-testid="score">{tetris.score}</div>
             <div data-testid="board" className={classes.Board}>
                 <div data-testid="field" className={classes.Field}>
-                    {tetris.playGround().map(tileDivFrom)}
+                    {tetris.playGround.map(tileDivFrom)}
                 </div>
                 <div data-testid="next">next piece</div>
             </div>

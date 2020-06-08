@@ -8,7 +8,7 @@ export class Tile {
         this.coordinate = [x, y]
     }
 
-    isOccupied = (): Boolean => this.occupied
+    isOccupied = (): boolean => this.occupied
 
     copy = (): Tile => {
         const copy = new Tile(this.coordinate[0], this.coordinate[1])
